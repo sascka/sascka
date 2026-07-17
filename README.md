@@ -85,17 +85,17 @@ I prefer understanding how things work beneath the surface: memory, protocols, d
   </picture>
 </p>
 
-<details>
-<summary><b>GitHub overview</b></summary>
-<br />
-<p align="center">
-  <img
-    height="170"
-    src="https://github-readme-stats.vercel.app/api?username=sascka&show_icons=true&hide_border=true&bg_color=060B1A&title_color=9FC4F5&text_color=C8D5E8&icon_color=7EA6D8&ring_color=9FC4F5&include_all_commits=true"
-    alt="sascka GitHub statistics"
-  />
-</p>
-</details>
+<div align="center">
+
+### GitHub overview
+
+<a href="https://github.com/sascka?tab=repositories"><b>Repositories</b></a>
+&nbsp;·&nbsp;
+<a href="https://github.com/sascka?tab=stars"><b>Stars</b></a>
+&nbsp;·&nbsp;
+<a href="https://github.com/sascka?tab=followers"><b>Followers</b></a>
+
+</div>
 
 <br />
 

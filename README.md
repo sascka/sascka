@@ -14,15 +14,6 @@
   <i>静かな冬の夜に、長く残るものをつくる。</i><br />
   <sub>Building things meant to last, under a quiet winter moon.</sub>
 </p>
-
-<p align="center">
-  <img
-    src="https://media.gifdb.com/mai-sakurajima-diguk6zt6fd1sg74.gif"
-    alt="Winter night"
-    width="88%"
-  />
-</p>
-
 <br />
 
 ## 月下 — About

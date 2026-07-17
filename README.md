@@ -87,6 +87,25 @@ I prefer understanding how things work beneath the surface: memory, protocols, d
 
 <div align="center">
 
+<br />
+
+## 連絡 — Private contact
+
+<div align="center">
+
+<p>
+For project discussions, security reports, collaboration proposals or other messages,
+use my private telegram relay.
+</p>
+
+<a href="https://t.me/saskaalsobot">
+  <b>🌸 Send a private message</b>
+</a>
+
+</div>
+
+<br />
+
 ### GitHub overview
 
 <a href="https://github.com/sascka?tab=repositories"><b>Repositories</b></a>

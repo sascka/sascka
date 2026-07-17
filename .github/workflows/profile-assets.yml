@@ -1,4 +1,4 @@
-name: Generate winter contribution snake
+name: Update profile assets
 
 on:
   schedule:
@@ -11,13 +11,13 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
 
     steps:
       - name: Checkout profile repository
         uses: actions/checkout@v4
 
-      - name: Generate winter contribution trails
+      - name: Generate winter contribution snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -25,10 +25,10 @@ jobs:
             assets/github-snake-dark.svg?color_snake=%23EAF3FF&color_dots=%23060B1A,%23131F39,%232A426A,%235F83B8,%239FC4F5
             assets/github-snake-light.svg?color_snake=%234B6691&color_dots=%23F5F8FC,%23DCE8F7,%23B7CDEA,%238DAED6,%235F83B8
 
-      - name: Commit generated files
+      - name: Commit generated profile assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/github-snake-dark.svg assets/github-snake-light.svg
-          git commit -m "chore: update contribution trail" || exit 0
+          git commit -m "chore: update profile assets" || exit 0
           git push

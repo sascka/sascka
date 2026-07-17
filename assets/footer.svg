@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="70" viewBox="0 0 1200 70" role="img" aria-label="Winter moon divider">
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9FC4F5" stop-opacity="0"/>
+      <stop offset="48%" stop-color="#9FC4F5" stop-opacity="0.7"/>
+      <stop offset="52%" stop-color="#9FC4F5" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#9FC4F5" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="80" y="34" width="1040" height="1" fill="url(#line)"/>
+  <circle cx="600" cy="34" r="16" fill="#EEF5FF"/>
+  <circle cx="607" cy="29" r="16" fill="#0D152A"/>
+  <g fill="#BBD6F6" opacity="0.75">
+    <circle cx="547" cy="34" r="2"/>
+    <circle cx="653" cy="34" r="2"/>
+    <circle cx="516" cy="34" r="1.2"/>
+    <circle cx="684" cy="34" r="1.2"/>
+  </g>
+</svg>

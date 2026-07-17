@@ -1,0 +1,34 @@
+name: Generate winter contribution snake
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Generate winter contribution trails
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/github-snake-dark.svg?color_snake=%23EAF3FF&color_dots=%23060B1A,%23131F39,%232A426A,%235F83B8,%239FC4F5
+            assets/github-snake-light.svg?color_snake=%234B6691&color_dots=%23F5F8FC,%23DCE8F7,%23B7CDEA,%238DAED6,%235F83B8
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-snake-dark.svg assets/github-snake-light.svg
+          git commit -m "chore: update contribution trail" || exit 0
+          git push

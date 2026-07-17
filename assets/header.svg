@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">mondmann — winter moon</title>
+  <desc id="desc">A quiet winter night in Japan with a full moon, snow, mountains, and a torii gate.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#030611"/>
+      <stop offset="55%" stop-color="#091126"/>
+      <stop offset="100%" stop-color="#111B35"/>
+    </linearGradient>
+
+    <radialGradient id="moonGlow">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.34"/>
+      <stop offset="45%" stop-color="#CFE2FF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#9FC4F5" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="mountain" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#263A62"/>
+      <stop offset="100%" stop-color="#10182C"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+
+    <filter id="textGlow" x="-30%" y="-50%" width="160%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="340" fill="url(#sky)"/>
+
+  <!-- moon glow -->
+  <circle cx="945" cy="91" r="113" fill="url(#moonGlow)"/>
+  <circle cx="945" cy="91" r="48" fill="#EEF5FF"/>
+  <circle cx="928" cy="77" r="7" fill="#D8E5F6" opacity="0.55"/>
+  <circle cx="962" cy="105" r="9" fill="#D8E5F6" opacity="0.42"/>
+  <circle cx="954" cy="69" r="4" fill="#D8E5F6" opacity="0.4"/>
+
+  <!-- stars -->
+  <g fill="#DDEBFF">
+    <circle cx="74" cy="61" r="1.5"/><circle cx="133" cy="109" r="1"/>
+    <circle cx="217" cy="44" r="1.2"/><circle cx="293" cy="82" r="1.6"/>
+    <circle cx="371" cy="38" r="1"/><circle cx="445" cy="105" r="1.3"/>
+    <circle cx="527" cy="58" r="1"/><circle cx="609" cy="94" r="1.4"/>
+    <circle cx="701" cy="41" r="1.1"/><circle cx="772" cy="118" r="1"/>
+    <circle cx="849" cy="53" r="1.4"/><circle cx="1043" cy="46" r="1.2"/>
+    <circle cx="1127" cy="98" r="1.5"/><circle cx="1161" cy="44" r="1"/>
+  </g>
+
+  <!-- distant mountains -->
+  <path d="M0 248 L145 154 L228 218 L356 124 L469 226 L606 151 L728 228 L856 173 L982 231 L1102 162 L1200 222 L1200 340 L0 340 Z" fill="url(#mountain)"/>
+  <path d="M0 272 L126 214 L218 260 L337 183 L455 262 L575 207 L702 266 L812 216 L947 271 L1054 213 L1200 267 L1200 340 L0 340 Z" fill="#0B1224"/>
+
+  <!-- snow caps -->
+  <path d="M307 215 L356 124 L401 214 L370 191 L356 203 L342 188 Z" fill="#A9C7E8" opacity="0.78"/>
+  <path d="M566 221 L606 151 L653 225 L625 207 L608 216 L592 204 Z" fill="#89A9CF" opacity="0.56"/>
+  <path d="M1070 210 L1102 162 L1140 218 L1117 203 L1103 211 L1090 201 Z" fill="#89A9CF" opacity="0.45"/>
+
+  <!-- torii silhouette -->
+  <g transform="translate(1015 196)" fill="#070B14">
+    <rect x="10" y="26" width="12" height="101" rx="2"/>
+    <rect x="94" y="26" width="12" height="101" rx="2"/>
+    <rect x="-7" y="18" width="130" height="11" rx="3"/>
+    <path d="M-18 7 Q58 19 134 7 L130 0 Q58 10 -14 0 Z"/>
+    <rect x="19" y="42" width="78" height="7" rx="2"/>
+  </g>
+
+  <!-- snowy foreground -->
+  <path d="M0 298 Q185 277 370 301 T734 298 T1200 301 L1200 340 L0 340 Z" fill="#D9E8FA" opacity="0.94"/>
+  <path d="M0 312 Q170 296 330 316 T654 311 T963 316 T1200 311 L1200 340 L0 340 Z" fill="#EEF5FF" opacity="0.93"/>
+
+  <!-- subtle snowfall -->
+  <g fill="#EAF3FF" opacity="0.78">
+    <circle cx="83" cy="151" r="2"/><circle cx="162" cy="201" r="1.5"/>
+    <circle cx="249" cy="136" r="1.8"/><circle cx="318" cy="244" r="2.2"/>
+    <circle cx="421" cy="169" r="1.4"/><circle cx="494" cy="229" r="2"/>
+    <circle cx="577" cy="130" r="1.7"/><circle cx="661" cy="198" r="1.3"/>
+    <circle cx="743" cy="155" r="2.1"/><circle cx="811" cy="244" r="1.6"/>
+    <circle cx="895" cy="180" r="1.4"/><circle cx="978" cy="244" r="2"/>
+    <circle cx="1094" cy="143" r="1.7"/><circle cx="1161" cy="216" r="1.5"/>
+  </g>
+
+  <!-- title -->
+  <text x="76" y="146" fill="#EAF3FF"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="58" font-weight="700" letter-spacing="8"
+        filter="url(#textGlow)">MONDMANN</text>
+  <text x="80" y="184" fill="#9FC4F5"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="17" letter-spacing="4">SYSTEMS · NETWORKS · OPEN SOURCE</text>
+  <text x="81" y="217" fill="#758DB8"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="15" letter-spacing="3">冬の月 — WINTER MOON</text>
+</svg>

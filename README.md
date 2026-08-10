@@ -32,12 +32,6 @@ I prefer understanding how things work beneath the surface: memory, protocols, d
 <table>
 <tr>
 <td width="50%" valign="top">
-<h3>Lantern</h3>
-<p>A privacy-respecting communication project focused on resilience, offline-first behaviour, local networking, and careful protocol design.</p>
-<p><code>Rust</code> <code>Networking</code> <code>Cryptography concepts</code> <code>SQLite</code></p>
-<p><b>Status:</b> architecture and core development</p>
-</td>
-<td width="50%" valign="top">
 <h3>Competitive programming</h3>
 <p>Building strong foundations in algorithms, data structures, problem solving, correctness, and efficient implementation.</p>
 <p><code>C++</code> <code>Algorithms</code> <code>Data structures</code> <code>Math</code></p>
